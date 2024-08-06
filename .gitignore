@@ -1,1 +1,4 @@
 speech.wav
+data/
+model.pth
+lib.py
