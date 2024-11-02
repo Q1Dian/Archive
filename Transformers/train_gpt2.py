@@ -1,4 +1,4 @@
-# My copy of train_gpt2.py following the instruction of karpathy's video https://www.youtube.com/watch?v=l8pRSuU81PU&t=1s&pp=ygUIa2FycGF0aHk%3D up until the implementation of DDP
+# My train_gpt2.py following the instruction of karpathy's video https://www.youtube.com/watch?v=l8pRSuU81PU&t=1s&pp=ygUIa2FycGF0aHk%3D up until the implementation of DDP
 
 from dataclasses import dataclass
 import torch
