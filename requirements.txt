@@ -3,3 +3,5 @@ matplotlib
 numpy 
 tqdm
 pillow
+kagglehub
+tiktoken

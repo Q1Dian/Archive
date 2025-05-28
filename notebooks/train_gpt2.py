@@ -6,8 +6,9 @@ import torch.nn as nn
 from torch.nn import functional as F
 import math
 import inspect
-
+import tiktoken
 import os
+import time
 
 # os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
@@ -244,7 +245,6 @@ class GPT(nn.Module):
 
 
 # -----------------------------
-import tiktoken
 
 
 class DataloaderLite:
@@ -333,8 +333,6 @@ def get_lr(it):
     coeff = 0.5 * (1 + math.cos(math.pi * decay_ratio))
     return min_lr + coeff * (max_lr - min_lr)
 
-
-import time
 
 # optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4, betas=(0.9, 0.95), eps=1e-8)
 optimizer = model.configure_optimizers(
