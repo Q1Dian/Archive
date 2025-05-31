@@ -1,4 +1,0 @@
-# DDPM Implementation for MNIST
-
-This is a implementation of ddpm for mnist, the model architecture have adapted to the original paper. However, the U-net model implementation was quite ineffective at first, I had to tweak it with language model a bit for it to be able to converge properlly (It probably implementation flaw by me).
-

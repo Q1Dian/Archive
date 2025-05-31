@@ -1,7 +1,11 @@
+--index-url https://download.pytorch.org/whl/cu128
 torch
+torchvision
+torchaudio
 matplotlib
 numpy 
 tqdm
 pillow
-kagglehub
+kagglehubLD_LIBRARY_PATH
 tiktoken
+jax
