@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 When I first submitted my project for CS 445, I didn't have a comparison between DDPM and my implementaion(I've been calling it CDPM for now) at all because I assumed my implementation will lead to gradient explosion and fail. 
 
-Now I have ran the model of ddpm, And it seems like having the model **predict the clean image** and computing the loss function with the $\hat{x_0}$ and $x_0$ have resulted in **better generated image quality**. However, there is seems to be fundamental flaws on the diffusion model (based on what yann said and my ituition) so I'm hesitant diving deep into the field of architecture/training strategies.
+Now I have ran the model of ddpm, And it seems like having the model **predict the clean image** and computing the loss function with the $\hat{x_0}$ and $x_0$ have resulted in **slightly better generated image quality**. However, there is seems to be fundamental flaws on the diffusion model (based on what yann said and my ituition) so I'm hesitant diving deep into the field of architecture/training strategies.
 
 
 

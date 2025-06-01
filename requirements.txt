@@ -6,6 +6,4 @@ matplotlib
 numpy 
 tqdm
 pillow
-kagglehubLD_LIBRARY_PATH
-tiktoken
-jax
+kagglehub
