@@ -30,7 +30,6 @@ The model also seems to converge better with a smaller model [naive model ddpm](
 Also the [CIRFAR10 ddpm notebook](cifar10/DDPM.ipynb) vs. [CIFAR10 cdpm notebook](cifar10/CDPM.ipynb) seems to produce better/more natural looking images(?)
 
 
-~~Note: It seems it only generate better when the model is **too capable** for the data (which negates the effect of potential gradient exploding)~~
 ~~Even though conceptually predicting for $x_0$ and $\epsilon_\theta$ are theoretically identical, trying to predict for some things while having little to no context (when T is high) as well as a small network is not optimal~~
 No conclusions yet as my conclusion have changed 3 times in the past 2 days.
 
