@@ -24,7 +24,7 @@ pip install -r requirements.txt
     - ddpm outperforms the version that predicts $x_0$ and I suspect the quality of clean prediction will degrade as the data complexity increases 
 
 # Takeaway from the project
-- Cool project, but I emailed my CS445 professors (showed no empirical evidence of improvements), and wasted their time. Probably should not have done that. 
+- Cool project, but I cold emailed two professors and showed no empirical evidence of improvements or findings. Probably should not have done that next time. 
 - Observations and others thoughts:
   - Diffusion is a cool concept that demonstrates the unique perspective of a well designed training strategy based on ELBO and KL-Divergence
   - If you want to style transfer from one image to another or modify some properties of the image (facial accessories etc.) would you corrupt the image by eg. 300 steps and then denoise it? (how do you make sure no important signals are lost?) (there's probably a paper somewhere)
