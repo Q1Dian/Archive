@@ -5,33 +5,30 @@ Date: Early May, 2025
 pip install -r requirements.txt
 
 # Project Structure
-- CIFAR-10
-  - ddpm implementation with CIFAR10 dataset with cosine scheduling
-  - cdpm implementation with cosine scheduling
-- MNIST
-  - ddpm implementation with unet thats downscaled from the ddpm paper with both noise schedulers 
-  - cdpm implementation with default linear beta scheduling
-- Naive Model MNIST
-  - Naive Diffusion implementation(CDPM) with MNIST dataset with experiments to have the model to learn $x_0$ instead of $\epsilon_\theta$ and calculate loss from $\^{x_0}$ and $x_0$
-  - DDPm with same backbone model
 
-# My Naive Implementation (Clean-DPM) vs DDPM
+- [DDPM](ddpm.ipynb)
+  - DDPM implementation with unet thats downscaled from the ddpm paper with linear beta scheduler
+- [DDPM with Cosine Scheduler](ddpm-cosine-scheduler.ipynb) 
+  - A paper mentioned that cosine scheduler could provide better generation quality so i tried it
+- [Diffusion model that predicts for clean image rather than noise](dm-predicts-x0.ipynb)
+  - Diffusion implementation for intuition building
+  - (Unexptected results)
+- Other Tests
+  - Naive Model MNIST
+    - Naive Diffusion implementation which have the model to learn $x_0$ instead of $\epsilon_\theta$ and calculate loss from $\^{x_0}$ and $x_0$
+    - DDPm with same small backbone model
+    - (Surprisingly, the naive model predicting $x_0$ showed signs of convergence and generated recognizable outputs while ddpm did not)
+  - CIFAR-10
+    - ddpm implementation with CIFAR10 dataset with cosine scheduling
+    - diffusion (predict $x_0$) implementation with cosine scheduling
+    - ddpm outperforms the version that predicts $x_0$ and I suspect the quality of clean prediction will degrade as the data complexity increases 
 
-When I first submitted my project for CS 445, I didn't have a comparison between DDPM and my implementaion(I've been calling it CDPM for now) at all because I assumed my implementation will lead to gradient explosion and fail. 
+# Takeaway from the project
+- Cool project, but I emailed my CS445 professors (showed no empirical evidence of improvements), and wasted their time. Probably should not have done that. 
+- Observations and others thoughts:
+  - Diffusion is a cool concept that demonstrates the unique perspective of a well designed training strategy based on ELBO and KL-Divergence
+  - If you want to style transfer from one image to another or modify some properties of the image (facial accessories etc.) would you corrupt the image by eg. 300 steps and then denoise it? (how do you make sure no important signals are lost?) (there's probably a paper somewhere)
 
-Now I have ran the model of ddpm, And it seems like having the model **predict the clean image** and computing the loss function with the $\hat{x_0}$ and $x_0$ have resulted in **slightly better generated image quality**. However, there is seems to be fundamental flaws on the diffusion model (based on what yann said and my ituition) so I'm hesitant diving deep into the field of architecture/training strategies.
-
-
-
-You can compare the sampled images in [My mnist ddpm notebook](mnist/DDPM(MNIST).ipynb) and [My mnist cdpm notebook](mnist/CDPM(MNIST).ipynb) and you can see that the quality of the cdpm is generally better.
-
-The model also seems to converge better with a smaller model [naive model ddpm](NaiveModelMNIST/DDPM%20(Naive%20Model).ipynb) vs. [naive model cdpm](NaiveModelMNIST/CDPM%20(Naive%20Model).ipynb)
-
-Also the [CIRFAR10 ddpm notebook](cifar10/DDPM.ipynb) vs. [CIFAR10 cdpm notebook](cifar10/CDPM.ipynb) seems to produce better/more natural looking images(?)
-
-
-~~Even though conceptually predicting for $x_0$ and $\epsilon_\theta$ are theoretically identical, trying to predict for some things while having little to no context (when T is high) as well as a small network is not optimal~~
-No conclusions yet as my conclusion have changed 3 times in the past 2 days.
 
 # Sources used
 - [Denoising Diffusion Probabilistic Models (Ho et al., 2020)](https://arxiv.org/abs/2006.11239) 
