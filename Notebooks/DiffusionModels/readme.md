@@ -17,7 +17,8 @@ pip install -r requirements.txt
   - Naive Model MNIST
     - Naive Diffusion implementation which have the model to learn $x_0$ instead of $\epsilon_\theta$ and calculate loss from $\^{x_0}$ and $x_0$
     - DDPm with same small backbone model
-    - (Surprisingly, the naive model predicting $x_0$ showed signs of convergence and generated recognizable outputs while ddpm did not, but this might be more of a hyperparameter tuning issue)
+    - (Surprisingly, the naive model predicting $x_0$ showed signs of convergence and generated recognizable outputs while ddpm did not)
+    - (I later came to aware that this might be a hyperparameter tuning issue, as step goes high, all ddpm approach is just learning how to go from one gaussian noise to another)
   - CIFAR-10
     - ddpm implementation with CIFAR10 dataset with cosine scheduling
     - diffusion (predict $x_0$) implementation with cosine scheduling
