@@ -9,3 +9,4 @@ pillow
 kagglehub
 tensorboard
 transformers
+timm
