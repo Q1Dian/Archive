@@ -1,3 +1,3 @@
-[submodule "Notebooks/DiffusionModels"]
-	path = Notebooks/DiffusionModels
+[submodule "DiffusionModels"]
+	path = DiffusionModels
 	url = git@github.com:Q1Dian/DiffusionModels.git
