@@ -1,8 +1,0 @@
-.conda/
-.vscode/
-data/
-samples_epoch.png
-checkpoints/
-samples/
-*.pth
-runs/
