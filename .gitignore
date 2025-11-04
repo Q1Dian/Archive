@@ -5,3 +5,4 @@ checkpoints/
 samples/
 *.pth
 runs/
+CS447/

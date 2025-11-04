@@ -1,2 +1,0 @@
-tiktoken
--r ../../requirements.txt

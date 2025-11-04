@@ -1,5 +1,3 @@
---index-url https://download.pytorch.org/whl/cu129
---extra-index-url https://pypi.org/simple
 torch
 torchvision
 torchaudio
@@ -12,4 +10,5 @@ tensorboard
 transformers
 timm
 opencv-python
+causal-conv1d
 mamba-ssm[dev]
