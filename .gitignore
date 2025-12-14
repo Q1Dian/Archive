@@ -6,3 +6,5 @@ samples/
 *.pth
 runs/
 CS447/
+*.mp4
+GatedDeltaNet/

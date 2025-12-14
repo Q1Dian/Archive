@@ -1,0 +1,9 @@
+name: exp
+channels:
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - cuda-toolkit==13.0

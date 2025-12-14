@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 torch
 torchvision
 torchaudio
+=======
+pandas
+>>>>>>> 4d57dc5 (xd)
 matplotlib
 numpy 
 tqdm
@@ -9,6 +13,18 @@ kagglehub
 tensorboard
 transformers
 timm
+einops 
+ninja
 opencv-python
+<<<<<<< HEAD
 causal-conv1d
 mamba-ssm[dev]
+=======
+seaborn
+umap-learn
+scikit-learn
+#pip install "mamba-ssm[dev]" --no-build-isolation
+#pip install "causal-conv1d>=1.4.0" --no-build-isolation
+webdataset
+datasets
+>>>>>>> 4d57dc5 (xd)
