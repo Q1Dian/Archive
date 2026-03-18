@@ -1,12 +1,8 @@
 # Archive
 
-What I don't understand, I don't understand.
 
-The goal is to have a secondary framework for fast research testing.
+### Environement
 
-### Env setup install
-
---no-build-isolation is recommended cause i personally cant get the default wheel for mamba to work
 ```
 conda env create -f environment.yml
 conda activate exp
