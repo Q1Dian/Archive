@@ -1,7 +1,13 @@
 # Archive
 
+## Projects
 
-### Environement
+| Project | Status |
+|---------|--------|
+| [EventSegmentation](./projects/EventSegmentation/) | Work in Progress |
+
+
+## Environement
 
 ```
 conda env create -f environment.yml
