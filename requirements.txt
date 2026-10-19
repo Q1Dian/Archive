@@ -1,0 +1,22 @@
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+# core
+torch
+torchvision
+torchcodec
+timm
+einops
+numpy
+scipy
+pandas
+pyyaml
+tqdm
+
+# data acquisition
+requests
+huggingface_hub
+gdown
+
+# dev
+pytest
+flake8

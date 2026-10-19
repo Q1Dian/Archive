@@ -1,0 +1,12 @@
+name: wcem
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - "ffmpeg<8"
+  - aria2
+  - gcc
+  - gxx
+  - pip:
+      - -r requirements.txt

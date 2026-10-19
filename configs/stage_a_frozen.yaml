@@ -1,0 +1,22 @@
+# Representation geometry: gates frozen after warmup; cheap λ penalty.
+run_name: stage_a_frozen
+length: 512
+batch: 4
+workers: 0
+lr: 3.0e-4
+weight_decay: 0.05
+steps: 5000
+log_every: 20
+save_every: 500
+eval_every: 100
+grad_clip: 1.0
+seed: 0
+surprise_key: surprise
+rate_warmup: 1000
+freeze_gates_after_warmup: true
+rate_weight_max: 0.05
+log_lam_min: 1.0e-3
+log_lam_max: 1.0e-1
+log_sigma_min: -3.0
+log_sigma_max: 2.0
+gate_bias: 2.0

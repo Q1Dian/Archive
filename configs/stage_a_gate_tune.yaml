@@ -1,0 +1,25 @@
+# λ-cliff fix: trainable gates, wide-open init, lower λ range, tighter log-σ upper bound.
+run_name: stage_a_gate_tune
+length: 512
+batch: 4
+workers: 0
+cache_gb: 10
+checkpoint: false
+rotate_every: 64
+lr: 1.0e-4
+weight_decay: 0.05
+steps: 8000
+log_every: 20
+save_every: 200
+grad_clip: 1.0
+seed: 1
+surprise_key: surprise
+rate_warmup: 0
+freeze_gates_after_warmup: false
+rate_weight_max: 1.0
+gate_tune: true
+log_lam_min: 1.0e-4
+log_lam_max: 1.0e-2
+log_sigma_min: -3.0
+log_sigma_max: 0.5
+gate_bias: 3.0

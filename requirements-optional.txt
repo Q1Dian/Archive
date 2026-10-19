@@ -1,0 +1,8 @@
+# Only needed for ablations and baselines; install after the core environment.
+# Input-only-gate ablation (chunked Gated DeltaNet kernel)
+flash-linear-attention
+# Mamba-2 baseline (build against the installed torch)
+# pip install "mamba-ssm[dev]" "causal-conv1d>=1.4.0" --no-build-isolation
+# Ego4D GoalStep download, after the license is approved
+ego4d
+awscli
